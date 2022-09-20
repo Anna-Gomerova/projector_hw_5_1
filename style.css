@@ -1,0 +1,83 @@
+/* @font-face {
+    font-family: Ogg;
+    src: url('./fonts/OggRegular.woff2') format('woff2'),
+    url('./fonts/OggRegular.woff') format('woff'),
+   url('./fonts/OggRegular.otf') format('otf'),
+   url('./fonts/OggRegular.ttf') format('ttf');
+   font-display: fallback;
+
+} */
+
+@font-face {
+    font-family: Ogg;
+    src: url('./fonts/OggLight.woff2') format('woff2'),
+        url('./fonts/OggLight.woff') format('woff'),
+        url('./fonts/OggLight.otf') format('otf'),
+        url('./fonts/OggLight.ttf') format('ttf');
+    font-weight: 300;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: Ogg;
+    src: url('./fonts/OggMedium.woff2') format('woff2'),
+        url('./fonts/OggMedium.woff') format('woff'),
+        url('./fonts/OggMedium.otf') format('otf'),
+        url('./fonts/OggMedium.ttf') format('ttf');
+    font-weight: 500;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: Ogg;
+    src: url('./fonts/OggMediumItalic.woff2') format('woff2'),
+        url('./fonts/OggMediumItalic.woff') format('woff'),
+        url('./fonts/OggMediumItalic.otf') format('otf'),
+        url('./fonts/OggMediumItalic.ttf') format('ttf');
+    font-weight: 500;
+    font-style: italic;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'TradeGothic LT Extended';
+    src: url('./fonts/Trade\ Gothic\ LT\ Extended.woff2') format('woff2'),
+        url('./fonts/Trade\ Gothic\ LT\ Extended.woff') format('woff'),
+        url('./fonts/Trade\ Gothic\ LT\ Extended.otf') format('otf'),
+        url('./fonts/Trade\ Gothic\ LT\ Extended.ttf') format('ttf');
+    font-display: fallback;
+
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Quattrocento', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 96px;
+    text-align: center;
+    line-height: 100px;
+    margin: 75px 0px;
+}
+
+h2 {
+    list-style-type: none;
+    /* font-weight: 400; */
+    font-size: 14px;
+    line-height: 21px;
+    opacity: 0.55;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+    

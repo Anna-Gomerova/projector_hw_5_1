@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <title>Sebastian Mullaert FORM</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Sebastian Mullaert personal site">
+    <meta name="viewport" content="width=device-width,
+initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <section class="Booking">
+                <h2>(Booking)</h2>
+                <p>Send <span>an email</span></p>
+                <p>If you have a general or project enquiry, please
+                    drop me an email — available now</p>
+                <form id="form" action="result.html" method="post">
+                    <label for="form_email">Email</label><br>
+                    <input type="text" id="form_email" name="email" placeholder="Your email" required /><br>
+                    <label for="form_name">Name</label><br>
+                    <input type="text" id="form_name" name="name" placeholder="Your name" /><br>
+                    <label for="form_message">Message</label><br>
+                    <input type="text" id="form_message" name="message" placeholder="Start typing here" /><br>
+                    <label for="project_type">Project type</label><br>
+                    <select id="project_type" name="project_type" placeholder="Choose">
+                        <option value="" disabled selected hidden>Choose </option>
+                        <option value="reserve for personal event">Reserve for personal event </option>
+                        <option value="buy tickets for a next concert">Buy tickets for a next concert</option>
+                        <option value="reserve from a venue">Reserve from a venue </option>
+                        <option value="other">Other </option>
+                    </select> <br>
+                    <input type="checkbox" id="form_checkbox" name="form_checkbox" />
+                    <label for="form_checkbox">I agree to receive ocasional newsletter with latest news and updates</label><br>
+                    
+                    <label for="send"><img class="button_line" src="./img/orange_line.svg" alt="decorated line"></label>
+                    <input type="submit" value="Send" id="send">
+                        <!-- <div class="line">—</div>
+                        <input type="submit" value="Send"> -->
+                    <!-- <div class="button">
+                        <a href="#"><img class="button_line" src="./img/orange_line.svg" alt="decorated line">Read more</a>
+                    </div> -->
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
