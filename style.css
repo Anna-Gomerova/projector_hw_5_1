@@ -166,8 +166,7 @@ a {
     margin-top: 20px;
 }
 
-.form__input::placeholder
- {
+.form__input::placeholder {
     color: #C4C4C4;
     opacity: 0.7;
 }
@@ -175,6 +174,10 @@ a {
 .form__group {
     /* position: relative; */
     margin-bottom: 50px;
+}
+
+.form__group:last-child {
+    margin-bottom: 0px;
 }
 
 .select,
@@ -262,28 +265,46 @@ a {
 /* треба додати файл з маркером-галочкою */
 
 
+
+
 /* Button "Send" */
 
-/* .button {
 
-    width: 225px;
-    height: 75px;
-    padding-top: 50px;
-    margin-top: 25px;
-    margin-left: 15.15%;
-
-} */
-
-/* .button a {
-    color: #D0A049;
-    font-size: 16px;
+.button {
+    height: fit-content;
     display: flex;
-} */
+    align-items: center;
+    cursor: pointer;
+
+}
 
 .button_line {
     margin-right: 30px;
+    display: block;
+
 }
 
+.button label {
+    cursor: pointer;
+}
+
+#send {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    font-family: 'TradeGothic LT Extended';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #D0A049;
+
+    cursor: pointer;
+    display: block;
+
+}
 
 
 /* Desktop */
@@ -307,7 +328,7 @@ a {
 
     p.text,
     .send {
-        padding-left: 24.95%
+        margin-left: 24.95%
     }
 
 
@@ -336,5 +357,22 @@ a {
 
     .form__title {
         text-align: center;
+    }
+
+    .button {
+        justify-content: center;
+    }
+
+    p.text {
+        margin-left: 24.95%
+    }
+
+    .form__group {
+        /* position: relative; */
+        margin-bottom: 30px;
+    }
+
+    .form__input {
+        margin-top: 15px;
     }
 }
