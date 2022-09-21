@@ -16,36 +16,50 @@ initial-scale=1">
             <section class="booking">
                 <h2>(Booking)</h2>
                 <div class="form_container">
-                    <p class="title">Send <span>an email</span></p>
+                    <p class="form__title">Send <span>an email</span></p>
                     <p class="text">If you have a general or project enquiry, please
                         drop me an email — available now</p>
                     <form id="form" action="result.html" method="post">
-                        <label for="form_email">Email</label><br>
-                        <input type="text" id="form_email" name="email" placeholder="Your email" required /><br>
-                        <label for="form_name">Name</label><br>
-                        <input type="text" id="form_name" name="name" placeholder="Your name" /><br>
-                        <label for="form_message">Message</label><br>
-                        <input type="text" id="form_message" name="message" placeholder="Start typing here" /><br>
-                        <label for="project_type">Project type</label><br>
-                        <select id="project_type" name="project_type" placeholder="Choose">
-                            <option value="" disabled selected hidden>Choose </option>
-                            <option value="reserve for personal event">Reserve for personal event </option>
-                            <option value="buy tickets for a next concert">Buy tickets for a next concert</option>
-                            <option value="reserve from a venue">Reserve from a venue </option>
-                            <option value="other">Other </option>
-                        </select> <br>
-                        <input type="checkbox" id="form_checkbox" name="form_checkbox" />
-                        <label for="form_checkbox">I agree to receive ocasional newsletter with latest news and updates</label><br>
-                        <div class="send">
-                            <label for="send"><img class="button_line" src="./img/orange_line.svg" alt="decorated line"></label>
+                        <div class="form__group">
+                            <label class="form__label" for="form_email">Email</label>
+                            <input class="form__input" type="text" id="form_email" name="email" placeholder="Your email" required />
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="form_name">Name</label>
+                            <input   class="form__input" type="text" id="form_name" name="name" placeholder="Your name" />
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="form_message">Message</label>
+                            <input  class="form__input" type="text" id="form_message" name="message" placeholder="Start typing here" />
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="project_type">Project type</label>
+                            <div class="select">
+                                <select class="form__input select" id="project_type" name="project_type">
+                                    <option value="" disabled selected hidden>Choose </option>
+                                    <option value="reserve for personal event">Reserve for personal event </option>
+                                    <option value="buy tickets for a next concert">Buy tickets for a next concert</option>
+                                    <option value="reserve from a venue">Reserve from a venue </option>
+                                    <option value="other">Other </option>
+                                </select> 
+                            </div>
+                        </div>
+                        <div class="form__group checkbox">
+                            <input class="form_checkbox__input" type="checkbox" id="form_checkbox" name="form_checkbox" />
+                            <label class="form_checkbox__label" for="form_checkbox">I agree to receive ocasional newsletter with latest news and
+                                updates</label>
+                        </div>
+                        <div class="form__group send button">
+                            <label for="send"><img class="button_line" src="./img/orange_line.svg"
+                                    alt="decorated line"></label>
                             <input type="submit" value="Send" id="send">
                         </div>
-                        
+
                 </div>
-                
-                        <!-- <div class="line">—</div>
+
+                <!-- <div class="line">—</div>
                         <input type="submit" value="Send"> -->
-                    <!-- <div class="button">
+                <!-- <div class="button">
                         <a href="#"><img class="button_line" src="./img/orange_line.svg" alt="decorated line">Read more</a>
                     </div> -->
                 </form>
